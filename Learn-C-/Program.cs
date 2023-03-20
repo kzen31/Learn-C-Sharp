@@ -41,6 +41,11 @@ bool aliveBool = Convert.ToBoolean(alive);
 Console.WriteLine(aliveBool);
 Console.WriteLine("Data type aliveBool is " + aliveBool.GetTypeCode() + "\n");
 
+int a = 1;
+char b = (char)a; // Hasil konversi ini akan berbentuk EMOTIKON. Bukan char 1
+Console.WriteLine(b);
+Console.WriteLine("Data type b setelah konversi eksplisit adalah " + b.GetTypeCode() + "\n");
+
 
 // Catatan
 // string 3.12 dikonvert ke int = error >> tidak bisa ada karakter lain selain angka
@@ -54,3 +59,18 @@ Console.WriteLine("Data type aliveBool is " + aliveBool.GetTypeCode() + "\n");
 // tipe data int ke double
 // tipe data double ke int
 
+/* Type casting pada C# terdapat 2 jenis yaitu:
+ * 1. Implicit Casting (automatically), otomatis terjadi konversi langsung tanpa dikonvert manual,
+ * ini melakukan konversi dari smaller type to larger type, contoh:
+ * char -> int -> long -> float -> double
+ * 
+ * int a = 1; // dikonversi menjadi long
+ * long b = a; // ini bisa
+ *
+ * 2. Explicit Casting (manually), perlu dilakukan konversi manual dengan bantuan fungsi,
+ * ini melakukan konversi dari larger type to smaller type, contoh:
+ * double -> float -> long -> int -> char
+ * 
+ * int a = 1;
+ * char b = (char) a; // hasil konversi ini berbentuk emotikon
+*/
