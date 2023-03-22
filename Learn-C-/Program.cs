@@ -1,94 +1,17 @@
-﻿// Arithmetic
+﻿// Math Class
 
-int x = 500;
+Console.WriteLine("Math.Pow 9 by 2 is " + Math.Pow(9, 2));
 
-int y = 100;
+Console.WriteLine("Math.Sqrt 9 is " + Math.Sqrt(9));
 
-int zAdd = x + y;
-Console.WriteLine("Addition 500 and 100 is " + zAdd);
+Console.WriteLine("Math.Max(9, 2) is " + Math.Max(9, 2));
 
-int zSub = x - y;
-Console.WriteLine("Subtraction 500 and 100 is " + zSub);
+Console.WriteLine("Math.Min(9,2) is " + Math.Min(9, 2));
 
-int zMultip = x * y;
-Console.WriteLine("Multiplication 500 and 100 is " + zMultip);
+Console.WriteLine("Math.Abs(-32) is " + Math.Abs(-32));
 
-int zDiv = x / y;
-Console.WriteLine("Division 500 and 100 is " + zDiv);
+Console.WriteLine("Pembulatan Math.Round(3.54) is " + Math.Round(3.54));
 
-int zMod = x % y;
-Console.WriteLine("Modulus 500 and 100 is " + zMod);
+Console.WriteLine("Pembulatan ke bawah Math.Floor(3.54) is " + Math.Floor(3.54));
 
-Console.WriteLine("Result x++ is " + x++);
-
-Console.WriteLine("Result x-- is " + x--);
-
-// Assignment
-// using symbol equal '=';
-
-Console.WriteLine("\nx = 500, result " + x);
-
-x += 50;
-Console.WriteLine("x += 50, result " + x);
-
-x = 500;
-x -= 50;
-Console.WriteLine("x -= 50, result " + x);
-
-x = 500;
-x /= 50;
-Console.WriteLine("x /= 50, result " + x);
-
-x = 500;
-x *= 50;
-Console.WriteLine("x *= 50, result " + x);
-
-x = 500;
-x %= 50;
-Console.WriteLine("x %= 50, result " + x);
-
-x = 5;
-x &= 7;
-Console.WriteLine("x = 5; x &= 7 is equal 101 AND 111 = 101, result " + x);
-
-x = 5;
-x |= 7;
-Console.WriteLine("x = 5; x |= 7 is equal 101 OR 111 = 111, result " + x);
-
-x = 5;
-x ^= 3;
-Console.WriteLine("x ^= 3 is equal to 101 NAND 11 = 110, result " + x);
-
-x = 5;
-x >>= 1;
-Console.WriteLine("x >>= 1 is equal to remove 1 digit in the end of biner 101 = 10, result " + x);
-
-x = 5;
-x <<= 3;
-Console.WriteLine("x <<= 3 is equal to add 3 digit of 0 zero in the end of biner 101 = 101000, or 5 * (2^3) result " + x);
-
-// Comparison
-// return boolean (true or false) comparing to variable
-
-x = 5;
-y = 7;
-
-Console.WriteLine("\nx = 5, y = 7;");
-Console.WriteLine("x == y, result " + (x == y));
-
-Console.WriteLine("x >= y, result " + (x >= y));
-
-Console.WriteLine("x <= y, result " + (x <= y));
-
-Console.WriteLine("x != y, result " + (x != y));
-
-Console.WriteLine("x > y, result " + (x > y));
-
-Console.WriteLine("x < y, result " + (x < y));
-
-
-
-// Logical
-// && logical AND
-// || logical OR
-// ! logical NOT
+Console.WriteLine("Pembulatan ke atas Math.Ceiling(3.54) is " + Math.Ceiling(3.54));
