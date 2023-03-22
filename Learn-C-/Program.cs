@@ -1,6 +1,11 @@
-﻿// Pseudo random number
+﻿// Application to count sisi miring segitiga siku2
 
-Random random = new Random();
+Console.WriteLine("Masukkan nilai sisi tegak: ");
+double sisiTegak = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine(random.Next(1, 7)); // will generate random number 1, 2, 3, 4, 5, 6
-Console.WriteLine(random.NextDouble()); // will generate random decimal double number between 0 and 1
+Console.WriteLine("Masukkan nilai sisi mendatar: ");
+double sisiMendatar = Convert.ToDouble(Console.ReadLine());
+
+double sisiMiring = Math.Sqrt(sisiTegak * sisiTegak + sisiMendatar * sisiMendatar);
+Console.WriteLine("Sisi miring segitiga yaitu: ");
+Console.WriteLine(sisiMiring);
